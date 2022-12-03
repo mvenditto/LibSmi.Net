@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "LibSmi.Net.Test": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "SMIPATH": "/tmp/libsmi-0.5.0/mibs/ietf"
+      }
+    }
+  }
+}
