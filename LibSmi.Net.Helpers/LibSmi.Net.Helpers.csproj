@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Title>LibSmi.Net.Helpers</Title>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <Authors>mvenditto</Authors>
+    <Company>mvenditto</Company>
+    <Description>Helper classes for LibSmi.Net</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mvenditto/LibSmi.Net</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>smi;mib;snmp;mib-parser;helper</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibSmi.Net\LibSmi.Net.csproj" />
+  </ItemGroup>
+
+</Project>

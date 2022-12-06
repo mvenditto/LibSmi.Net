@@ -5,12 +5,16 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibSmi.Net", "LibSmi.Net\LibSmi.Net.csproj", "{E53AF4BA-2C76-49CD-B5ED-78B31864EB2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibSmi.Net.Test", "LibSmi.Net.Test\LibSmi.Net.Test.csproj", "{8014BD60-D9AB-47C7-812B-DCC97C6CD44B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibSmi.Net.Test", "LibSmi.Net.Test\LibSmi.Net.Test.csproj", "{8014BD60-D9AB-47C7-812B-DCC97C6CD44B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DABD96B6-0DDF-4375-9EF2-5DAAF2663345}"
 	ProjectSection(SolutionItems) = preProject
 		testEnvironments.json = testEnvironments.json
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibSmi.Net.Console", "LibSmi.Net.Console\LibSmi.Net.Console.csproj", "{96D234F7-893D-4226-8331-A944008EB78A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibSmi.Net.Helpers", "LibSmi.Net.Helpers\LibSmi.Net.Helpers.csproj", "{B56771B0-CCF9-4918-B6F7-9AA803CC5974}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +30,14 @@ Global
 		{8014BD60-D9AB-47C7-812B-DCC97C6CD44B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8014BD60-D9AB-47C7-812B-DCC97C6CD44B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8014BD60-D9AB-47C7-812B-DCC97C6CD44B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D234F7-893D-4226-8331-A944008EB78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D234F7-893D-4226-8331-A944008EB78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D234F7-893D-4226-8331-A944008EB78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D234F7-893D-4226-8331-A944008EB78A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B56771B0-CCF9-4918-B6F7-9AA803CC5974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B56771B0-CCF9-4918-B6F7-9AA803CC5974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B56771B0-CCF9-4918-B6F7-9AA803CC5974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B56771B0-CCF9-4918-B6F7-9AA803CC5974}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

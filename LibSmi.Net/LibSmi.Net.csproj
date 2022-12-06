@@ -23,14 +23,14 @@
 
 	<PropertyGroup>
 		<Title>LibSmi.Net</Title>
-		<VersionPrefix>0.1.0</VersionPrefix>
+		<VersionPrefix>0.2.0</VersionPrefix>
 		<VersionSuffix></VersionSuffix>
 		<Authors>mvenditto</Authors>
 		<Company>mvenditto</Company>
 		<Description>.NET wrapper around libsmi</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl></PackageProjectUrl>
-		<RepositoryUrl>https://github.com/mvenditto/FalcoSecurity.Plugin.Sdk</RepositoryUrl>
+		<RepositoryUrl>https://github.com/mvenditto/LibSmi.Net</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>smi;mib;snmp;mib-parser</PackageTags>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>

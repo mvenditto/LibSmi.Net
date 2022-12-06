@@ -130,13 +130,20 @@ namespace LibSmi.Net
             LibSmiNative.SmiSetFlags(flags);
         }
 
-        public static bool LoadModule(string module)
+        public static string? LoadModule(string module)
         {
             ThrowIfNotInitialized();
 
             ArgumentNullException.ThrowIfNull(module);
 
-            return LibSmiNative.SmiLoadModule(module) != IntPtr.Zero;
+            var modNamePtr =  LibSmiNative.SmiLoadModule(module);
+
+            if (modNamePtr == IntPtr.Zero)
+            {
+                return null;
+            }
+
+            return Marshal.PtrToStringAnsi(modNamePtr);
         }
 
         public static bool IsModuleLoaded(string module)
@@ -176,9 +183,14 @@ namespace LibSmi.Net
 
         private static SmiErrorHandler ErrorHandlerRef = ErrorHandler;
 
-        public static void SetErrorHandler()
+        public static void EnableErrorHandler()
         {
             LibSmiNative.SmiSetErrorHandler(ErrorHandler);
+        }
+
+        public static void DisableErrorHandler()
+        {
+            LibSmiNative.SmiUnsetErrorHandler(IntPtr.Zero);
         }
     }
 }

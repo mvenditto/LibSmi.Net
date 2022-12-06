@@ -56,6 +56,9 @@ namespace LibSmi.Net
         [DllImport(LibSmi.Path, EntryPoint = "smiSetErrorHandler", CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
         internal static extern void SmiSetErrorHandler(SmiErrorHandler errorHandler);
 
+        [DllImport(LibSmi.Path, EntryPoint = "smiSetErrorHandler", CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+        internal static extern void SmiUnsetErrorHandler(IntPtr errorHandler);
+
         [DllImport(LibSmi.Path, EntryPoint = "smiExit", CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
         internal static extern int SmiExit();
     }
