@@ -1,6 +1,12 @@
 # LibSmi.Net
 .NET wrapper for [libsmi](https://gitlab.ibr.cs.tu-bs.de/nm/libsmi)
 
+## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/NuGet_project_logo.svg/2048px-NuGet_project_logo.svg.png" width="24" />  NuGet packages
+[![](https://img.shields.io/nuget/v/LibSmi.Net?style=flat-square&label=LibSmi.Net)](https://www.nuget.org/packages/LibSmi.Net) <br>
+[![](https://img.shields.io/nuget/v/LibSmi.Net.Helpers?style=flat-square&label=LibSmi.Net.Helpers)](https://www.nuget.org/packages/LibSmi.Net.Helpers)
+
+## Examples
+
 ```csharp
 using LibSmi.Net;
 
