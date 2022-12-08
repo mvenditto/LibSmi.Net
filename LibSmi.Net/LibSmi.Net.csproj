@@ -23,8 +23,8 @@
 
 	<PropertyGroup>
 		<Title>LibSmi.Net</Title>
-		<VersionPrefix>0.2.0</VersionPrefix>
-		<VersionSuffix></VersionSuffix>
+		<VersionPrefix>0.2.1</VersionPrefix>
+		<VersionSuffix>dev</VersionSuffix>
 		<Authors>mvenditto</Authors>
 		<Company>mvenditto</Company>
 		<Description>.NET wrapper around libsmi</Description>

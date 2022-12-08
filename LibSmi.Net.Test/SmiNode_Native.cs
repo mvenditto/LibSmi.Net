@@ -28,5 +28,27 @@ namespace LibSmi.Net
             Assert.Equal(nodeName, node!.Name);
             Assert.NotNull(node.Description);
         }
+
+        [Fact]
+        public void Equality()
+        {
+            var nodeName = "internet";
+            var a = Smi.GetNode(null, nodeName);
+            var b = Smi.GetNode(null, nodeName);
+            var c = Smi.GetNode(null, nodeName);
+            Assert.Equal(a, b);
+            Assert.Equal(b, c);
+        }
+
+        [Fact]
+        public void HashCode()
+        {
+            var nodeName = "internet";
+            var a = Smi.GetNode(null, nodeName).GetHashCode();
+            var b = Smi.GetNode(null, nodeName).GetHashCode();
+            var c = Smi.GetNode(null, nodeName).GetHashCode(); ;
+            Assert.Equal(a, b);
+            Assert.Equal(b, c);
+        }
     }
 }

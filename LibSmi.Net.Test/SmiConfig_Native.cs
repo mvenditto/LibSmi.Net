@@ -28,7 +28,7 @@ namespace LibSmi.Net
         [Fact]
         public void SmiShouldLoadModule()
         {
-            Assert.True(Smi.LoadModule("IF-MIB"));
+            Assert.Equal("IF-MIB", Smi.LoadModule("IF-MIB"));
             Assert.True(Smi.IsModuleLoaded("IF-MIB"));
             Assert.False(Smi.IsModuleLoaded("SNMPv2-SMI"));
         }
@@ -45,7 +45,7 @@ namespace LibSmi.Net
         [Fact]
         public void SmiLoadModuleShouldBeNullIfNotFound()
         {
-            Assert.False(Smi.LoadModule("NOT-EXISTING-MIB"));
+            Assert.Null(Smi.LoadModule("NOT-EXISTING-MIB"));
         }
 
         [Fact]

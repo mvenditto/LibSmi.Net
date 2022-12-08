@@ -9,7 +9,7 @@
   <PropertyGroup>
     <Title>LibSmi.Net.Helpers</Title>
     <VersionPrefix>0.1.0</VersionPrefix>
-    <VersionSuffix></VersionSuffix>
+    <VersionSuffix>dev</VersionSuffix>
     <Authors>mvenditto</Authors>
     <Company>mvenditto</Company>
     <Description>Helper classes for LibSmi.Net</Description>

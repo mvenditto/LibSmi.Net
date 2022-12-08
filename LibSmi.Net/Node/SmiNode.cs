@@ -138,9 +138,9 @@ namespace LibSmi.Net.Node
 
         public override int GetHashCode()
         {
-            _hashCode ??= GetOid().ToArray().GetHashCode();
-
-            return _hashCode.Value;
+            // _hashCode ??= GetOid().ToArray().GetHashCode();
+            // return _hashCode.Value;
+            return ((nint)_nodePtr).GetHashCode();
         }
 
         /// <summary>
